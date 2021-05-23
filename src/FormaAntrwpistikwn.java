@@ -1,8 +1,9 @@
 import java.awt.FlowLayout;
 import java.awt.GridLayout;
-import java.awt.ScrollPane;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.IOException;
+import java.util.ArrayList;
 
 import javax.swing.ButtonGroup;
 import javax.swing.JButton;
@@ -10,9 +11,7 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JRadioButton;
-import javax.swing.JScrollBar;
 import javax.swing.JScrollPane;
-import javax.swing.JSlider;
 
 public class FormaAntrwpistikwn extends JFrame  {
 	
@@ -1551,10 +1550,580 @@ public class FormaAntrwpistikwn extends JFrame  {
 	
 	class circleListener implements ActionListener{
 
-		
+		private ArrayList<Integer> UniversityScore = new ArrayList<Integer>();
+		int score;
+		int sum =0;
 		public void actionPerformed(ActionEvent e) {
 			
 			
+			//Βαθμολογια αναλογα με την επιλογη του χρηστη
+			//Σχολη 1
+			if(choice1101.isSelected()) {
+				score=1;
+			}else if(choice1102.isSelected()) {
+				score=2;
+			}else if(choice1103.isSelected()) {
+				score=3;
+			}else if(choice1104.isSelected()) {
+				score=4;
+			}else if(choice1105.isSelected()) {
+				score=5;
+			}
+			sum +=score;//Εισαγωγη του score σε μεταβλητη οπου αποθηκέυετυαι το συνολικο αποτελεσμα
+			
+			
+			if(choice1201.isSelected()) {
+				score=1;
+			}else if(choice1202.isSelected()) {
+				score=2;
+			}else if(choice1203.isSelected()) {
+				score=3;
+			}else if(choice1204.isSelected()) {
+				score=4;
+			}else if(choice1205.isSelected()) {
+				score=5;
+			}
+			sum +=score;
+			
+			if(choice1301.isSelected()) {
+				score=1;
+			}else if(choice1302.isSelected()) {
+				score=2;
+			}else if(choice1303.isSelected()) {
+				score=3;
+			}else if(choice1304.isSelected()) {
+				score=4;
+			}else if(choice1305.isSelected()) {
+				score=5;
+			}
+			sum +=score;
+			
+			if(choice1401.isSelected()) {
+				score=1;
+			}else if(choice1402.isSelected()) {
+				score=2;
+			}else if(choice1403.isSelected()) {
+				score=3;
+			}else if(choice1404.isSelected()) {
+				score=4;
+			}else if(choice1405.isSelected()) {
+				score=5;
+			}
+			sum +=score;
+			UniversityScore.add(sum);
+			sum=0;
+			
+			//Σχολη 2
+			if(choice2101.isSelected()) {
+				score=1;
+			}else if(choice2102.isSelected()) {
+				score=2;
+			}else if(choice2103.isSelected()) {
+				score=3;
+			}else if(choice2104.isSelected()) {
+				score=4;
+			}else if(choice2105.isSelected()) {
+				score=5;
+			}
+			sum +=score;
+			
+			if(choice2201.isSelected()) {
+				score=1;
+			}else if(choice2202.isSelected()) {
+				score=2;
+			}else if(choice2203.isSelected()) {
+				score=3;
+			}else if(choice2204.isSelected()) {
+				score=4;
+			}else if(choice2205.isSelected()) {
+				score=5;
+			}
+			sum +=score;
+			
+			if(choice2301.isSelected()) {
+				score=1;
+			}else if(choice2302.isSelected()) {
+				score=2;
+			}else if(choice2303.isSelected()) {
+				score=3;
+			}else if(choice2304.isSelected()) {
+				score=4;
+			}else if(choice2305.isSelected()) {
+				score=5;
+			}
+			sum +=score;
+			
+			if(choice2401.isSelected()) {
+				score=1;
+			}else if(choice2402.isSelected()) {
+				score=2;
+			}else if(choice2403.isSelected()) {
+				score=3;
+			}else if(choice2404.isSelected()) {
+				score=4;
+			}else if(choice2405.isSelected()) {
+				score=5;
+			}
+			sum +=score;
+			UniversityScore.add(sum);
+			sum=0;
+			
+			//Σχολη 3
+			if(choice3101.isSelected()) {
+				score=1;
+			}else if(choice3102.isSelected()) {
+				score=2;
+			}else if(choice3103.isSelected()) {
+				score=3;
+			}else if(choice3104.isSelected()) {
+				score=4;
+			}else if(choice3105.isSelected()) {
+				score=5;
+			}
+			sum +=score;
+			
+			if(choice3201.isSelected()) {
+				score=1;
+			}else if(choice3202.isSelected()) {
+				score=2;
+			}else if(choice3203.isSelected()) {
+				score=3;
+			}else if(choice3204.isSelected()) {
+				score=4;
+			}else if(choice3205.isSelected()) {
+				score=5;
+			}
+			sum +=score;
+			
+			if(choice3301.isSelected()) {
+				score=1;
+			}else if(choice3302.isSelected()) {
+				score=2;
+			}else if(choice3303.isSelected()) {
+				score=3;
+			}else if(choice3304.isSelected()) {
+				score=4;
+			}else if(choice3305.isSelected()) {
+				score=5;
+			}
+			sum +=score;
+			
+			if(choice3401.isSelected()) {
+				score=1;
+			}else if(choice3402.isSelected()) {
+				score=2;
+			}else if(choice3403.isSelected()) {
+				score=3;
+			}else if(choice3404.isSelected()) {
+				score=4;
+			}else if(choice3405.isSelected()) {
+				score=5;
+			}
+			sum +=score;
+			UniversityScore.add(sum);
+			sum=0;
+			
+			//Σχολη 4
+			if(choice4101.isSelected()) {
+				score=1;
+			}else if(choice4102.isSelected()) {
+				score=2;
+			}else if(choice4103.isSelected()) {
+				score=3;
+			}else if(choice4104.isSelected()) {
+				score=4;
+			}else if(choice4105.isSelected()) {
+				score=5;
+			}
+			sum +=score;
+			
+			if(choice4201.isSelected()) {
+				score=1;
+			}else if(choice4202.isSelected()) {
+				score=2;
+			}else if(choice4203.isSelected()) {
+				score=3;
+			}else if(choice4204.isSelected()) {
+				score=4;
+			}else if(choice4205.isSelected()) {
+				score=5;
+			}
+			sum +=score;
+			
+			if(choice4301.isSelected()) {
+				score=1;
+			}else if(choice4302.isSelected()) {
+				score=2;
+			}else if(choice4303.isSelected()) {
+				score=3;
+			}else if(choice4304.isSelected()) {
+				score=4;
+			}else if(choice4305.isSelected()) {
+				score=5;
+			}
+			sum +=score;
+			
+			if(choice4401.isSelected()) {
+				score=1;
+			}else if(choice4402.isSelected()) {
+				score=2;
+			}else if(choice4403.isSelected()) {
+				score=3;
+			}else if(choice4404.isSelected()) {
+				score=4;
+			}else if(choice4405.isSelected()) {
+				score=5;
+			}
+			sum +=score;
+			UniversityScore.add(sum);
+			sum=0;
+			
+			//Σχολη 5
+			if(choice5101.isSelected()) {
+				score=1;
+			}else if(choice5102.isSelected()) {
+				score=2;
+			}else if(choice5103.isSelected()) {
+				score=3;
+			}else if(choice5104.isSelected()) {
+				score=4;
+			}else if(choice5105.isSelected()) {
+				score=5;
+			}
+			sum +=score;
+			
+			if(choice5201.isSelected()) {
+				score=1;
+			}else if(choice5202.isSelected()) {
+				score=2;
+			}else if(choice5203.isSelected()) {
+				score=3;
+			}else if(choice5204.isSelected()) {
+				score=4;
+			}else if(choice5205.isSelected()) {
+				score=5;
+			}
+			sum +=score;
+			
+			
+			if(choice5301.isSelected()) {
+				score=1;
+			}else if(choice5302.isSelected()) {
+				score=2;
+			}else if(choice5303.isSelected()) {
+				score=3;
+			}else if(choice5304.isSelected()) {
+				score=4;
+			}else if(choice5305.isSelected()) {
+				score=5;
+			}
+			sum +=score;
+			
+			if(choice5401.isSelected()) {
+				score=1;
+			}else if(choice5402.isSelected()) {
+				score=2;
+			}else if(choice5403.isSelected()) {
+				score=3;
+			}else if(choice5404.isSelected()) {
+				score=4;
+			}else if(choice5405.isSelected()) {
+				score=5;
+			}
+			sum +=score;
+			UniversityScore.add(sum);
+			sum=0;
+			
+			//Σχολη 6
+			if(choice6101.isSelected()) {
+				score=1;
+			}else if(choice6102.isSelected()) {
+				score=2;
+			}else if(choice6103.isSelected()) {
+				score=3;
+			}else if(choice6104.isSelected()) {
+				score=4;
+			}else if(choice6105.isSelected()) {
+				score=5;
+			}
+			sum +=score;
+			
+			if(choice6201.isSelected()) {
+				score=1;
+			}else if(choice6202.isSelected()) {
+				score=2;
+			}else if(choice6203.isSelected()) {
+				score=3;
+			}else if(choice6204.isSelected()) {
+				score=4;
+			}else if(choice6205.isSelected()) {
+				score=5;
+			}
+			sum +=score;
+			
+			
+			if(choice6301.isSelected()) {
+				score=1;
+			}else if(choice6302.isSelected()) {
+				score=2;
+			}else if(choice6303.isSelected()) {
+				score=3;
+			}else if(choice6304.isSelected()) {
+				score=4;
+			}else if(choice6305.isSelected()) {
+				score=5;
+			}
+			sum +=score;
+			
+			if(choice6401.isSelected()) {
+				score=1;
+			}else if(choice6402.isSelected()) {
+				score=2;
+			}else if(choice6403.isSelected()) {
+				score=3;
+			}else if(choice6404.isSelected()) {
+				score=4;
+			}else if(choice6405.isSelected()) {
+				score=5;
+			}
+			sum +=score;
+			UniversityScore.add(sum);
+			sum=0;
+			
+			//Σχολη 7
+			if(choice7101.isSelected()) {
+				score=1;
+			}else if(choice7102.isSelected()) {
+				score=2;
+			}else if(choice7103.isSelected()) {
+				score=3;
+			}else if(choice7104.isSelected()) {
+				score=4;
+			}else if(choice7105.isSelected()) {
+				score=5;
+			}
+			sum +=score;
+			
+			if(choice7201.isSelected()) {
+				score=1;
+			}else if(choice7202.isSelected()) {
+				score=2;
+			}else if(choice7203.isSelected()) {
+				score=3;
+			}else if(choice7204.isSelected()) {
+				score=4;
+			}else if(choice7205.isSelected()) {
+				score=5;
+			}
+			sum +=score;
+			
+			
+			if(choice7301.isSelected()) {
+				score=1;
+			}else if(choice7302.isSelected()) {
+				score=2;
+			}else if(choice7303.isSelected()) {
+				score=3;
+			}else if(choice7304.isSelected()) {
+				score=4;
+			}else if(choice7305.isSelected()) {
+				score=5;
+			}
+			sum +=score;
+			
+			if(choice7401.isSelected()) {
+				score=1;
+			}else if(choice7402.isSelected()) {
+				score=2;
+			}else if(choice7403.isSelected()) {
+				score=3;
+			}else if(choice7404.isSelected()) {
+				score=4;
+			}else if(choice7405.isSelected()) {
+				score=5;
+			}
+			sum +=score;
+			UniversityScore.add(sum);
+			sum=0;
+			
+			//Σχολη 8
+			if(choice8101.isSelected()) {
+				score=1;
+			}else if(choice8102.isSelected()) {
+				score=2;
+			}else if(choice8103.isSelected()) {
+				score=3;
+			}else if(choice8104.isSelected()) {
+				score=4;
+			}else if(choice8105.isSelected()) {
+				score=5;
+			}
+			sum +=score;
+			
+			if(choice8201.isSelected()) {
+				score=1;
+			}else if(choice8202.isSelected()) {
+				score=2;
+			}else if(choice8203.isSelected()) {
+				score=3;
+			}else if(choice8204.isSelected()) {
+				score=4;
+			}else if(choice8205.isSelected()) {
+				score=5;
+			}
+			sum +=score;
+			
+			
+			if(choice8301.isSelected()) {
+				score=1;
+			}else if(choice8302.isSelected()) {
+				score=2;
+			}else if(choice8303.isSelected()) {
+				score=3;
+			}else if(choice8304.isSelected()) {
+				score=4;
+			}else if(choice8305.isSelected()) {
+				score=5;
+			}
+			sum +=score;
+			
+			if(choice8401.isSelected()) {
+				score=1;
+			}else if(choice8402.isSelected()) {
+				score=2;
+			}else if(choice8403.isSelected()) {
+				score=3;
+			}else if(choice8404.isSelected()) {
+				score=4;
+			}else if(choice8405.isSelected()) {
+				score=5;
+			}
+			sum +=score;
+			UniversityScore.add(sum);
+			sum=0;
+			
+			//Σχολη 9
+			if(choice9101.isSelected()) {
+				score=1;
+			}else if(choice9102.isSelected()) {
+				score=2;
+			}else if(choice9103.isSelected()) {
+				score=3;
+			}else if(choice9104.isSelected()) {
+				score=4;
+			}else if(choice9105.isSelected()) {
+				score=5;
+			}
+			sum +=score;
+			
+			if(choice9201.isSelected()) {
+				score=1;
+			}else if(choice9202.isSelected()) {
+				score=2;
+			}else if(choice9203.isSelected()) {
+				score=3;
+			}else if(choice9204.isSelected()) {
+				score=4;
+			}else if(choice9205.isSelected()) {
+				score=5;
+			}
+			sum +=score;
+			
+			
+			if(choice9301.isSelected()) {
+				score=1;
+			}else if(choice9302.isSelected()) {
+				score=2;
+			}else if(choice9303.isSelected()) {
+				score=3;
+			}else if(choice9304.isSelected()) {
+				score=4;
+			}else if(choice9305.isSelected()) {
+				score=5;
+			}
+			sum +=score;
+			
+			if(choice9401.isSelected()) {
+				score=1;
+			}else if(choice9402.isSelected()) {
+				score=2;
+			}else if(choice9403.isSelected()) {
+				score=3;
+			}else if(choice9404.isSelected()) {
+				score=4;
+			}else if(choice9405.isSelected()) {
+				score=5;
+			}
+			sum +=score;
+			UniversityScore.add(sum);
+			sum=0;
+			
+			//Σχολη 10
+			if(choice10101.isSelected()) {
+				score=1;
+			}else if(choice10102.isSelected()) {
+				score=2;
+			}else if(choice10103.isSelected()) {
+				score=3;
+			}else if(choice10104.isSelected()) {
+				score=4;
+			}else if(choice10105.isSelected()) {
+				score=5;
+			}
+			sum +=score;
+			
+			if(choice10201.isSelected()) {
+				score=1;
+			}else if(choice10202.isSelected()) {
+				score=2;
+			}else if(choice10203.isSelected()) {
+				score=3;
+			}else if(choice10204.isSelected()) {
+				score=4;
+			}else if(choice10205.isSelected()) {
+				score=5;
+			}
+			sum +=score;
+			
+			
+			if(choice10301.isSelected()) {
+				score=1;
+			}else if(choice10302.isSelected()) {
+				score=2;
+			}else if(choice10303.isSelected()) {
+				score=3;
+			}else if(choice10304.isSelected()) {
+				score=4;
+			}else if(choice10305.isSelected()) {
+				score=5;
+			}
+			sum +=score;
+			
+			if(choice10401.isSelected()) {
+				score=1;
+			}else if(choice10402.isSelected()) {
+				score=2;
+			}else if(choice10403.isSelected()) {
+				score=3;
+			}else if(choice10404.isSelected()) {
+				score=4;
+			}else if(choice10405.isSelected()) {
+				score=5;
+			}
+			sum +=score;
+			UniversityScore.add(sum);
+			sum=0;
+			
+			
+			
+			if(e.getSource() == submit) {
+				try {
+					Uni u = new Uni(1);
+					TelikiOthoni othoni = new TelikiOthoni(u.selectFirst(UniversityScore),name);
+				}catch(IOException e1) {
+					e1.printStackTrace();
+				}
+			}
 		}
 		
 	}
