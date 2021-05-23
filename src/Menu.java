@@ -79,7 +79,7 @@ public class Menu extends JFrame {
 		buttonThetikwn.addActionListener(listener);
 		
 		//Τοποθέτηση των componets στο frame
-		
+		this.setLocation(250, 200);
 		this.setContentPane(centralPanel);
 		this.setTitle("Uni Orient");
 		this.setVisible(true);
@@ -99,7 +99,7 @@ public class Menu extends JFrame {
 			User u = new User(name);
 			
 			if(e.getSource() == buttonAnthrwpistikwn) {
-				new FormaAntrwpistikwn();
+				new FormaAntrwpistikwn(name);
 			}else if(e.getSource() == buttonOikonomikwn) {
 				new FormaOikonomikwn();
 			}else if(e.getSource() == buttonYgeias) {
