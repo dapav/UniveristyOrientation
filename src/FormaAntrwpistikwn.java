@@ -1,4 +1,5 @@
 import java.awt.FlowLayout;
+import java.awt.Font;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -381,6 +382,7 @@ public class FormaAntrwpistikwn extends JFrame  {
 		this.name = aName;
 		
 		submit = new JButton("ΥΠΟΒΟΛΗ");
+		submit.setFont(new Font("Bold", 1, 18));
 		circleListener listener = new circleListener();
 		submit.addActionListener(listener);
 		
@@ -394,6 +396,7 @@ public class FormaAntrwpistikwn extends JFrame  {
 		//Καθορισμος των components για την σχολη 1
 		//Ερωτηση 1
 		question11 = new JLabel("1.Πόσο σου αρέσει το μάθημα ιστορία;");
+		question11.setFont(new Font("Italic",2,16));
 		question11.setHorizontalAlignment(JLabel.CENTER);
 		choice1101 = new JRadioButton("Καθόλου");
 		choice1102 = new JRadioButton("Σχεδόν Καθόλου");
@@ -421,6 +424,8 @@ public class FormaAntrwpistikwn extends JFrame  {
 		
 		//Ερωτηση 2
 		question12 = new JLabel("2.Πόσο καλά γνωρίζεις την ιστορία της Ελλάδας;");
+		question12.setHorizontalAlignment(JLabel.CENTER);
+		
 		choice1201 = new JRadioButton("Καθόλου");
 		choice1202 = new JRadioButton("Σχεδόν Καθόλου");
 		choice1203 = new JRadioButton("Μέτρια");
@@ -446,6 +451,7 @@ public class FormaAntrwpistikwn extends JFrame  {
 		choice1205.addActionListener(listener12);
 		//Ερωτηση 3
 		question13 = new JLabel("3.Πόσο καλά γνωρίζεις την ιστορία των άλλων πολιτισμών;");
+		question13.setHorizontalAlignment(JLabel.CENTER);
 		choice1301 = new JRadioButton("Καθόλου");
 		choice1302 = new JRadioButton("Σχεδόν Καθόλου");
 		choice1303 = new JRadioButton("Μέτρια");
@@ -471,6 +477,7 @@ public class FormaAntrwpistikwn extends JFrame  {
 		choice1305.addActionListener(listener13);
 		//Ερωτηση 4
 		question14 = new JLabel("4.Πόσο πολύ σου αρέσει να διαβάζεις μυθιστορήματα;");
+		question14.setHorizontalAlignment(JLabel.CENTER);
 		choice1401 = new JRadioButton("Καθόλου");
 		choice1402 = new JRadioButton("Σχεδόν Καθόλου");
 		choice1403 = new JRadioButton("Μέτρια");

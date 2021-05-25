@@ -37,18 +37,20 @@ public class Menu extends JFrame {
 		buttonOikonomikwn = new JButton("Οικονομικών Επιστημών");
 		
 		H1 = new JLabel("ΑΡΧΙΚΗ ΣΕΛΙΔΑ");
-		H1.setFont(new Font("Tahoma", 1, 18));
-		H1.setLocation(400/2, 1);
+		H1.setFont(new Font("Tahoma", 1, 25));
+		H1.setHorizontalAlignment(JLabel.CENTER);
+		//H1.setLocation(400/2, 1);
 		
 		nameRequest = new JLabel("Παρακαλώ δώστε Όνομα:");
-		nameRequest.setFont(new Font("Tahoma" , 1, 12));
+		nameRequest.setFont(new Font("Tahoma" , 1, 20));
 		
 		nameBox = new  JTextField();
-		nameBox.setSize(10, 50);
+		//nameBox.setSize(10, 50);
+		
 		
 		//Δημιουργία των Panel και εισαγωγη των components
 		aPanel = new JPanel();
-		GridLayout grid = new GridLayout(3,2,10,10);
+		GridLayout grid = new GridLayout(3,2,15,15);
 		aPanel.setLayout(grid);
 		
 		
