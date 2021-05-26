@@ -2126,6 +2126,7 @@ public class FormaAntrwpistikwn extends JFrame  {
 			if(e.getSource() == submit) {
 				try {
 					Uni u = new Uni(1);
+					
 					TelikiOthoni othoni = new TelikiOthoni(u.selectFirst(UniversityScore),name);
 				}catch(IOException e1) {
 					e1.printStackTrace();

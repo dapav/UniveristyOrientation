@@ -20,7 +20,7 @@ public class Uni {
 			}catch(FileNotFoundException e){
 				e.printStackTrace();
 			}
-		}else if(anIndicator ==2) {
+		}else if(anIndicator == 2) {
 			try {
 				BufferedReader reader = new BufferedReader(new FileReader("Thetikwn.txt"));
 				String in;
@@ -30,7 +30,7 @@ public class Uni {
 			}catch(FileNotFoundException e){
 				e.printStackTrace();
 			}
-		}else if(anIndicator ==3) {
+		}else if(anIndicator == 3) {
 			try {
 				BufferedReader reader = new BufferedReader(new FileReader("Ygeias.txt"));
 				String in;
@@ -40,7 +40,7 @@ public class Uni {
 			}catch(FileNotFoundException e){
 				e.printStackTrace();
 			}
-		}else if(anIndicator ==4) {
+		}else if(anIndicator == 4) {
 			try {
 				BufferedReader reader = new BufferedReader(new FileReader("Oikonomias.txt"));
 				String in;
@@ -58,7 +58,11 @@ public class Uni {
 		return university.get(index);
 	}
 	
-	
+	public void print() {
+		for(String u:university) {
+			System.out.println(u);
+		}
+	}
 
 	public int findFirst(ArrayList<Integer> a) {
 			

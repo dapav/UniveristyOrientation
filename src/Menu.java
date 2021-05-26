@@ -103,11 +103,11 @@ public class Menu extends JFrame {
 			if(e.getSource() == buttonAnthrwpistikwn) {
 				new FormaAntrwpistikwn(name);
 			}else if(e.getSource() == buttonOikonomikwn) {
-				new FormaOikonomikwn();
+				new FormaOikonomikwn(name);
 			}else if(e.getSource() == buttonYgeias) {
-				new FormaYgeias();
+				new FormaYgeias(name);
 			}else if(e.getSource() == buttonThetikwn) {
-				new FormaThetikwn();
+				new FormaThetikwn(name);
 			}
 			
 		}
