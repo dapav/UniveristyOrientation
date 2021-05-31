@@ -1,5 +1,4 @@
 import java.awt.GridLayout;
-import java.awt.Image;
 
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -36,6 +35,5 @@ public class TelikiOthoni extends JFrame{
 		this.setResizable(false);
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	}
-	
-	
+
 }
