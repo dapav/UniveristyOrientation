@@ -32,7 +32,7 @@ public class TelikiOthoni extends JFrame{
 		
 		this.setTitle("Τελικη Οθόνη");
 		this.setVisible(true);
-		this.setSize(350,550);
+		this.setSize(250,250);
 		this.setResizable(false);
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	}
