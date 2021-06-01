@@ -1,3 +1,4 @@
+import java.awt.Color;
 import java.awt.FlowLayout;
 import java.awt.Font;
 import java.awt.GridLayout;
@@ -319,12 +320,12 @@ public class FormaOikonomikwn extends JFrame {
 		central = new JPanel(new GridLayout(65,1));
 		sheet = new JScrollPane(central);
 		sheet.getVerticalScrollBar().setUnitIncrement(10);
-		
+		central.setBackground(Color.green);
 		
 		
 		//Καθορισμος των components για την σχολη 1
 		//Ερωτηση 1
-		question11 = new JLabel("1.Πόσο σου αρέσει το μάθημα ιστορία;");
+		question11 = new JLabel("1.Σου αρέσουν τα μαθηματικά;");
 		question11.setFont(new Font("Italic",2,16));
 		question11.setHorizontalAlignment(JLabel.CENTER);
 		choice1101 = new JRadioButton("Καθόλου");
@@ -352,9 +353,9 @@ public class FormaOikonomikwn extends JFrame {
 		choice1105.addActionListener(listener11);
 		
 		//Ερωτηση 2
-		question12 = new JLabel("2.Πόσο καλά γνωρίζεις την ιστορία της Ελλάδας;");
+		question12 = new JLabel("2.Σε ενδιαφέρει η οικονομικη επιστημη;");
 		question12.setHorizontalAlignment(JLabel.CENTER);
-		
+		question12.setFont(new Font("Italic",2,16));
 		choice1201 = new JRadioButton("Καθόλου");
 		choice1202 = new JRadioButton("Σχεδόν Καθόλου");
 		choice1203 = new JRadioButton("Μέτρια");
@@ -379,8 +380,9 @@ public class FormaOikonomikwn extends JFrame {
 		choice1204.addActionListener(listener12);
 		choice1205.addActionListener(listener12);
 		//Ερωτηση 3
-		question13 = new JLabel("3.Πόσο καλά γνωρίζεις την ιστορία των άλλων πολιτισμών;");
+		question13 = new JLabel("3.Σε ενδιαφέρει ο κλάδος των επενδύσεων;");
 		question13.setHorizontalAlignment(JLabel.CENTER);
+		question13.setFont(new Font("Italic",2,16));
 		choice1301 = new JRadioButton("Καθόλου");
 		choice1302 = new JRadioButton("Σχεδόν Καθόλου");
 		choice1303 = new JRadioButton("Μέτρια");
@@ -405,8 +407,9 @@ public class FormaOikonomikwn extends JFrame {
 		choice1304.addActionListener(listener13);
 		choice1305.addActionListener(listener13);
 		//Ερωτηση 4
-		question14 = new JLabel("4.Πόσο πολύ σου αρέσει να διαβάζεις μυθιστορήματα;");
+		question14 = new JLabel("4.Θέλεις να μάθεις για την μικροοικονομία και μακροοικονομία;");
 		question14.setHorizontalAlignment(JLabel.CENTER);
+		question14.setFont(new Font("Italic",2,16));
 		choice1401 = new JRadioButton("Καθόλου");
 		choice1402 = new JRadioButton("Σχεδόν Καθόλου");
 		choice1403 = new JRadioButton("Μέτρια");
@@ -433,7 +436,9 @@ public class FormaOikonomikwn extends JFrame {
 		
 		//Σχολη 2
 		//Ερωτηση 1
-		question21 = new JLabel("5.Πόσο σου αρέσει το μάθημα ιστορία;");
+		question21 = new JLabel("5.Σου αρέσει να συνθέτεις μουσική;");
+		question21.setHorizontalAlignment(JLabel.CENTER);
+		question21.setFont(new Font("Italic",2,16));
 		choice2101 = new JRadioButton("Καθόλου");
 		choice2102 = new JRadioButton("Σχεδόν Καθόλου");
 		choice2103 = new JRadioButton("Μέτρια");
@@ -458,7 +463,9 @@ public class FormaOikonomikwn extends JFrame {
 		choice2104.addActionListener(listener21);
 		choice2105.addActionListener(listener21);
 		//Ερωτηση 2
-		question22 = new JLabel("6.Πόσο σου αρέσει το μάθημα ιστορία;");
+		question22 = new JLabel("6.Θα σε ενδιέφερε η ιστορία της μουσικής;");
+		question22.setHorizontalAlignment(JLabel.CENTER);
+		question22.setFont(new Font("Italic",2,16));
 		choice2201 = new JRadioButton("Καθόλου");
 		choice2202 = new JRadioButton("Σχεδόν Καθόλου");
 		choice2203 = new JRadioButton("Μέτρια");
@@ -483,7 +490,9 @@ public class FormaOikonomikwn extends JFrame {
 		choice2204.addActionListener(listener22);
 		choice2205.addActionListener(listener22);
 		//Ερωτηση 3
-		question23 = new JLabel("7Πόσο σου αρέσει το μάθημα ιστορία;");
+		question23 = new JLabel("7.Θα σου άρεζε να δίδασκες μουσική σε κάποια σχολή;");
+		question23.setHorizontalAlignment(JLabel.CENTER);
+		question23.setFont(new Font("Italic",2,16));
 		choice2301 = new JRadioButton("Καθόλου");
 		choice2302 = new JRadioButton("Σχεδόν Καθόλου");
 		choice2303 = new JRadioButton("Μέτρια");
@@ -508,7 +517,9 @@ public class FormaOikonomikwn extends JFrame {
 		choice2304.addActionListener(listener23);
 		choice2305.addActionListener(listener23);
 		//Ερωτηση 4
-		question24 = new JLabel("8.Πόσο σου αρέσει το μάθημα ιστορία;");
+		question24 = new JLabel("8.Σου αρέσει να παίζεις μουσικη;");
+		question24.setHorizontalAlignment(JLabel.CENTER);
+		question24.setFont(new Font("Italic",2,16));
 		choice2401 = new JRadioButton("Καθόλου");
 		choice2402 = new JRadioButton("Σχεδόν Καθόλου");
 		choice2403 = new JRadioButton("Μέτρια");
@@ -535,7 +546,9 @@ public class FormaOikonomikwn extends JFrame {
 		
 		//Σχολη 3 
 		//Ερωτηση 1
-		question31 = new JLabel("9.Πόσο σου αρέσει το μάθημα ιστορία;");
+		question31 = new JLabel("9.Σε ενδιαφέρουν τομείς όπως το μανατζμεντ και το μαρκετινγκ;");
+		question31.setHorizontalAlignment(JLabel.CENTER);
+		question31.setFont(new Font("Italic",2,16));
 		choice3101 = new JRadioButton("Καθόλου");
 		choice3102 = new JRadioButton("Σχεδόν Καθόλου");
 		choice3103 = new JRadioButton("Μέτρια");
@@ -560,7 +573,9 @@ public class FormaOikonomikwn extends JFrame {
 		choice3104.addActionListener(listener31);
 		choice3105.addActionListener(listener31);
 		//Ερωτηση 2
-		question32 = new JLabel("10.Πόσο σου αρέσει το μάθημα ιστορία;");
+		question32 = new JLabel("10.Θα σου άρεζε να διοικείς μια επιχείρηση;");
+		question32.setHorizontalAlignment(JLabel.CENTER);
+		question32.setFont(new Font("Italic",2,16));
 		choice3201 = new JRadioButton("Καθόλου");
 		choice3202 = new JRadioButton("Σχεδόν Καθόλου");
 		choice3203 = new JRadioButton("Μέτρια");
@@ -585,7 +600,9 @@ public class FormaOikonomikwn extends JFrame {
 		choice3204.addActionListener(listener32);
 		choice3205.addActionListener(listener32);
 		//Ερωτηση 3
-		question33 = new JLabel("11.Πόσο σου αρέσει το μάθημα ιστορία;");
+		question33 = new JLabel("11.Θέλεις να ασχοληθείς με κλάδους της οικονομικής επιστήμης;");
+		question33.setHorizontalAlignment(JLabel.CENTER);
+		question33.setFont(new Font("Italic",2,16));
 		choice3301 = new JRadioButton("Καθόλου");
 		choice3302 = new JRadioButton("Σχεδόν Καθόλου");
 		choice3303 = new JRadioButton("Μέτρια");
@@ -612,7 +629,9 @@ public class FormaOikonomikwn extends JFrame {
 		
 		
 		//Ερωτηση 4
-		question34 = new JLabel("12.Πόσο σου αρέσει το μάθημα ιστορία;");
+		question34 = new JLabel("12.Θεωρείς τα μαθηματικά  ενδιαφέρον μάθημα;");
+		question34.setHorizontalAlignment(JLabel.CENTER);
+		question34.setFont(new Font("Italic",2,16));
 		choice3401 = new JRadioButton("Καθόλου");
 		choice3402 = new JRadioButton("Σχεδόν Καθόλου");
 		choice3403 = new JRadioButton("Μέτρια");
@@ -639,7 +658,9 @@ public class FormaOikonomikwn extends JFrame {
 		
 		//Σχολη 4 
 		//Ερωτηση 1
-		question41 = new JLabel("13.Πόσο σου αρέσει το μάθημα ιστορία;");
+		question41 = new JLabel("13.Σου αρέσουν οι ξένες γλώσσες όπως Αλβανικά ,Ρουμάνικα,Αραβικά;");
+		question41.setHorizontalAlignment(JLabel.CENTER);
+		question41.setFont(new Font("Italic",2,16));
 		choice4101 = new JRadioButton("Καθόλου");
 		choice4102 = new JRadioButton("Σχεδόν Καθόλου");
 		choice4103 = new JRadioButton("Μέτρια");
@@ -664,7 +685,9 @@ public class FormaOikonomikwn extends JFrame {
 		choice4104.addActionListener(listener41);
 		choice4105.addActionListener(listener41);
 		//Ερωτηση 2
-		question42 = new JLabel("14.Πόσο σου αρέσει το μάθημα ιστορία;");
+		question42 = new JLabel("14.Βρίσκεις ενδιαφέροντα μαθήματα όπως το διεθνές δίκαιο και η κοινωνιολογία;");
+		question42.setHorizontalAlignment(JLabel.CENTER);
+		question42.setFont(new Font("Italic",2,16));
 		choice4201 = new JRadioButton("Καθόλου");
 		choice4202 = new JRadioButton("Σχεδόν Καθόλου");
 		choice4203 = new JRadioButton("Μέτρια");
@@ -689,7 +712,9 @@ public class FormaOikonomikwn extends JFrame {
 		choice4204.addActionListener(listener42);
 		choice4205.addActionListener(listener42);
 		//Ερωτηση 3
-		question43 = new JLabel("15.Πόσο σου αρέσει το μάθημα ιστορία;");
+		question43 = new JLabel("15.Σου αρέσει η ιστορία;");
+		question43.setHorizontalAlignment(JLabel.CENTER);
+		question43.setFont(new Font("Italic",2,16));
 		choice4301 = new JRadioButton("Καθόλου");
 		choice4302 = new JRadioButton("Σχεδόν Καθόλου");
 		choice4303 = new JRadioButton("Μέτρια");
@@ -716,7 +741,9 @@ public class FormaOikonomikwn extends JFrame {
 		
 		
 		//Ερωτηση 4
-		question44 = new JLabel("16.Πόσο σου αρέσει το μάθημα ιστορία;");
+		question44 = new JLabel("16.Θα σου άρεσε να μαθεις Τούρκικα και Βουλγάρικα;");
+		question44.setHorizontalAlignment(JLabel.CENTER);
+		question44.setFont(new Font("Italic",2,16));
 		choice4401 = new JRadioButton("Καθόλου");
 		choice4402 = new JRadioButton("Σχεδόν Καθόλου");
 		choice4403 = new JRadioButton("Μέτρια");
@@ -743,7 +770,9 @@ public class FormaOikonomikwn extends JFrame {
 		
 		//Σχολη 5
 		//Ερωτηση 1
-		question51 = new JLabel("17.Πόσο σου αρέσει το μάθημα ιστορία;");
+		question51 = new JLabel("17.Σου αρέσουν οι ξένες γλώσσες(όπως Γερμανικά , Γαλλικά,Ρώσικα,Τούρκικα);;");
+		question51.setHorizontalAlignment(JLabel.CENTER);
+		question51.setFont(new Font("Italic",2,16));
 		choice5101 = new JRadioButton("Καθόλου");
 		choice5102 = new JRadioButton("Σχεδόν Καθόλου");
 		choice5103 = new JRadioButton("Μέτρια");
@@ -768,7 +797,9 @@ public class FormaOikonomikwn extends JFrame {
 		choice5104.addActionListener(listener51);
 		choice5105.addActionListener(listener51);
 		//Ερωτηση 2
-		question52 = new JLabel("18.Πόσο σου αρέσει το μάθημα ιστορία;");
+		question52 = new JLabel("18.Σου αρέσει η ιστορία;");
+		question52.setHorizontalAlignment(JLabel.CENTER);
+		question52.setFont(new Font("Italic",2,16));
 		choice5201 = new JRadioButton("Καθόλου");
 		choice5202 = new JRadioButton("Σχεδόν Καθόλου");
 		choice5203 = new JRadioButton("Μέτρια");
@@ -793,7 +824,9 @@ public class FormaOikonomikwn extends JFrame {
 		choice5204.addActionListener(listener52);
 		choice5205.addActionListener(listener52);
 		//Ερωτηση 3
-		question53 = new JLabel("19.Πόσο σου αρέσει το μάθημα ιστορία;");
+		question53 = new JLabel("19.Θέλεις να ασχοληθείς με μαθήματα όπως το διεθνές δίκαιο και η κοινωνιολογία;");
+		question53.setHorizontalAlignment(JLabel.CENTER);
+		question53.setFont(new Font("Italic",2,16));
 		choice5301 = new JRadioButton("Καθόλου");
 		choice5302 = new JRadioButton("Σχεδόν Καθόλου");
 		choice5303 = new JRadioButton("Μέτρια");
@@ -820,7 +853,9 @@ public class FormaOikonomikwn extends JFrame {
 		
 		
 		//Ερωτηση 4
-		question54 = new JLabel("20.Πόσο σου αρέσει το μάθημα ιστορία;");
+		question54 = new JLabel("20.Σε ενδιαφέρει να μαθεις για την πολιτική της Ευρώπης ανα τα χρόνια;");
+		question54.setHorizontalAlignment(JLabel.CENTER);
+		question54.setFont(new Font("Italic",2,16));
 		choice5401 = new JRadioButton("Καθόλου");
 		choice5402 = new JRadioButton("Σχεδόν Καθόλου");
 		choice5403 = new JRadioButton("Μέτρια");
@@ -847,7 +882,9 @@ public class FormaOikonomikwn extends JFrame {
 		
 		//Σχολη 6
 		//Ερωτηση 1
-		question61 = new JLabel("21.Πόσο σου αρέσει το μάθημα ιστορία;");
+		question61 = new JLabel("21.Βρίσκεις ενδιαφέρουσα την αλληλεπίδραση ανθρώπου υπολογιστή;");
+		question61.setHorizontalAlignment(JLabel.CENTER);
+		question61.setFont(new Font("Italic",2,16));
 		choice6101 = new JRadioButton("Καθόλου");
 		choice6102 = new JRadioButton("Σχεδόν Καθόλου");
 		choice6103 = new JRadioButton("Μέτρια");
@@ -872,7 +909,9 @@ public class FormaOikonomikwn extends JFrame {
 		choice6104.addActionListener(listener61);
 		choice6105.addActionListener(listener61);
 		//Ερωτηση 2
-		question62 = new JLabel("22.Πόσο σου αρέσει το μάθημα ιστορία;");
+		question62 = new JLabel("22.Είσαι καλός στα μαθηματικά;");
+		question62.setHorizontalAlignment(JLabel.CENTER);
+		question62.setFont(new Font("Italic",2,16));
 		choice6201 = new JRadioButton("Καθόλου");
 		choice6202 = new JRadioButton("Σχεδόν Καθόλου");
 		choice6203 = new JRadioButton("Μέτρια");
@@ -897,7 +936,9 @@ public class FormaOikonomikwn extends JFrame {
 		choice6204.addActionListener(listener62);
 		choice6205.addActionListener(listener62);
 		//Ερωτηση 3
-		question63 = new JLabel("23.Πόσο σου αρέσει το μάθημα ιστορία;");
+		question63 = new JLabel("23.Σε ενδιαφέρει η πληροφορική και ο προγραμματισμός;");
+		question63.setHorizontalAlignment(JLabel.CENTER);
+		question63.setFont(new Font("Italic",2,16));
 		choice6301 = new JRadioButton("Καθόλου");
 		choice6302 = new JRadioButton("Σχεδόν Καθόλου");
 		choice6303 = new JRadioButton("Μέτρια");
@@ -924,7 +965,9 @@ public class FormaOikonomikwn extends JFrame {
 		
 		
 		//Ερωτηση 4
-		question64 = new JLabel("24.Πόσο σου αρέσει το μάθημα ιστορία;");
+		question64 = new JLabel("24.Έχεις καλή σχέση με την τεχνολογία;");
+		question64.setHorizontalAlignment(JLabel.CENTER);
+		question64.setFont(new Font("Italic",2,16));
 		choice6401 = new JRadioButton("Καθόλου");
 		choice6402 = new JRadioButton("Σχεδόν Καθόλου");
 		choice6403 = new JRadioButton("Μέτρια");
@@ -952,7 +995,9 @@ public class FormaOikonomikwn extends JFrame {
 		//Σχολη 7
 		
 		//Ερωτηση 1
-		question71 = new JLabel("25.Πόσο σου αρέσει το μάθημα ιστορία;");
+		question71 = new JLabel("25.Σου αρέσει η άλγευρα και η στατιστική;");
+		question71.setHorizontalAlignment(JLabel.CENTER);
+		question71.setFont(new Font("Italic",2,16));
 		choice7101 = new JRadioButton("Καθόλου");
 		choice7102 = new JRadioButton("Σχεδόν Καθόλου");
 		choice7103 = new JRadioButton("Μέτρια");
@@ -977,7 +1022,9 @@ public class FormaOikonomikwn extends JFrame {
 		choice7104.addActionListener(listener71);
 		choice7105.addActionListener(listener71);
 		//Ερωτηση 2
-		question72 = new JLabel("26.Πόσο σου αρέσει το μάθημα ιστορία;");
+		question72 = new JLabel("26.Σου αρέσει η οικονομική επιστήμη;");
+		question72.setHorizontalAlignment(JLabel.CENTER);
+		question72.setFont(new Font("Italic",2,16));
 		choice7201 = new JRadioButton("Καθόλου");
 		choice7202 = new JRadioButton("Σχεδόν Καθόλου");
 		choice7203 = new JRadioButton("Μέτρια");
@@ -1002,7 +1049,9 @@ public class FormaOikonomikwn extends JFrame {
 		choice7204.addActionListener(listener72);
 		choice7205.addActionListener(listener72);
 		//Ερωτηση 3
-		question73 = new JLabel("27.Πόσο σου αρέσει το μάθημα ιστορία;");
+		question73 = new JLabel("27.Σε ενδιαφέρει η λογιστική και ο τομέας του χρηματιστηρίου;");
+		question73.setHorizontalAlignment(JLabel.CENTER);
+		question73.setFont(new Font("Italic",2,16));
 		choice7301 = new JRadioButton("Καθόλου");
 		choice7302 = new JRadioButton("Σχεδόν Καθόλου");
 		choice7303 = new JRadioButton("Μέτρια");
@@ -1029,7 +1078,9 @@ public class FormaOikonomikwn extends JFrame {
 		
 		
 		//Ερωτηση 4
-		question74 = new JLabel("28.Πόσο σου αρέσει το μάθημα ιστορία;");
+		question74 = new JLabel("28.Θα σου ταίριαζε το επάγγελμα του λογιστή;");
+		question74.setHorizontalAlignment(JLabel.CENTER);
+		question74.setFont(new Font("Italic",2,16));
 		choice7401 = new JRadioButton("Καθόλου");
 		choice7402 = new JRadioButton("Σχεδόν Καθόλου");
 		choice7403 = new JRadioButton("Μέτρια");
@@ -1055,7 +1106,9 @@ public class FormaOikonomikwn extends JFrame {
 		choice7405.addActionListener(listener74);
 		
 		//Σχολη 8
-		question81 = new JLabel("29.Πόσο σου αρέσει το μάθημα ιστορία;");
+		question81 = new JLabel("29.Σου αρέσουν τα αθλήματα;");
+		question81.setHorizontalAlignment(JLabel.CENTER);
+		question81.setFont(new Font("Italic",2,16));
 		choice8101 = new JRadioButton("Καθόλου");
 		choice8102 = new JRadioButton("Σχεδόν Καθόλου");
 		choice8103 = new JRadioButton("Μέτρια");
@@ -1080,7 +1133,9 @@ public class FormaOikonomikwn extends JFrame {
 		choice8104.addActionListener(listener81);
 		choice8105.addActionListener(listener81);
 		//Ερωτηση 2
-		question82 = new JLabel("30.Πόσο σου αρέσει το μάθημα ιστορία;");
+		question82 = new JLabel("30.Σε ενδιαφέρει η προπονητική;");
+		question82.setHorizontalAlignment(JLabel.CENTER);
+		question82.setFont(new Font("Italic",2,16));
 		choice8201 = new JRadioButton("Καθόλου");
 		choice8202 = new JRadioButton("Σχεδόν Καθόλου");
 		choice8203 = new JRadioButton("Μέτρια");
@@ -1105,7 +1160,9 @@ public class FormaOikonomikwn extends JFrame {
 		choice8204.addActionListener(listener82);
 		choice8205.addActionListener(listener82);
 		//Ερωτηση 3
-		question83 = new JLabel("31.Πόσο σου αρέσει το μάθημα ιστορία;");
+		question83 = new JLabel("31.Θέλεις να ασχοληθείς με την ανατομία και την άσκηση του ανθρώπινου σώματο;");
+		question83.setHorizontalAlignment(JLabel.CENTER);
+		question83.setFont(new Font("Italic",2,16));
 		choice8301 = new JRadioButton("Καθόλου");
 		choice8302 = new JRadioButton("Σχεδόν Καθόλου");
 		choice8303 = new JRadioButton("Μέτρια");
@@ -1132,7 +1189,9 @@ public class FormaOikonomikwn extends JFrame {
 		
 		
 		//Ερωτηση 4
-		question84 = new JLabel("32.Πόσο σου αρέσει το μάθημα ιστορία;");
+		question84 = new JLabel("32.Θα ήθελες να διδάσκεις το μάθημα της φυσικής αγώγης σε παιδία;");
+		question84.setHorizontalAlignment(JLabel.CENTER);
+		question84.setFont(new Font("Italic",2,16));
 		choice8401 = new JRadioButton("Καθόλου");
 		choice8402 = new JRadioButton("Σχεδόν Καθόλου");
 		choice8403 = new JRadioButton("Μέτρια");
@@ -1243,13 +1302,13 @@ public class FormaOikonomikwn extends JFrame {
 		central.add(submit);
 		
 		//Εισαγωγη των components στο Frame
-		this.setLocation(400, 25);
+		this.setLocation(350, 25);
 		this.setTitle("Φόρμα Οικονομικών");
 		this.setContentPane(sheet);			
 		this.setVisible(true);
-		this.setSize(500,700);
+		this.setSize(700,700);
 		this.setResizable(false);
-		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
 		//this.pack();
 		
 	}

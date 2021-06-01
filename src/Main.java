@@ -4,7 +4,13 @@ public class Main {
 
 	public static void main(String[] args) throws IOException {
 		
-		Menu m = new Menu();
+		
+		java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+            	Menu m = new Menu();
+            }
+      });
+		
 		
 	}
 
