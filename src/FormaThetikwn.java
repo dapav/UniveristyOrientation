@@ -15,7 +15,7 @@ import javax.swing.JPanel;
 import javax.swing.JRadioButton;
 import javax.swing.JScrollPane;
 
-class FormaThetikwn  extends JFrame{
+public class FormaThetikwn  extends JFrame{
 
 	
 		
