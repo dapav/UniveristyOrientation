@@ -1780,7 +1780,7 @@ public class FormaThetikwn  extends JFrame{
 				central.add(submit);
 				
 				//Εισαγωγη των components στο Frame]
-				this.setLocation(400, 25);
+				this.setLocation(300, 25);
 				this.setTitle("Φόρμα Ανθρωπιστηκών Σπουδών");
 				this.setContentPane(sheet);			
 				this.setVisible(true);
@@ -2417,7 +2417,7 @@ public class FormaThetikwn  extends JFrame{
 					
 					if(e.getSource() == submit) {
 						try {
-							Uni u = new Uni(1);
+							Uni u = new Uni(4);
 							
 							TelikiOthoni othoni = new TelikiOthoni(u.selectFirst(UniversityScore),name);
 						}catch(IOException e1) {

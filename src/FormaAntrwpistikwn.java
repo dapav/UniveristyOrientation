@@ -1,4 +1,5 @@
 import java.awt.Color;
+import java.awt.Dimension;
 import java.awt.FlowLayout;
 import java.awt.Font;
 import java.awt.GridLayout;
@@ -1469,15 +1470,19 @@ public class FormaAntrwpistikwn extends JFrame  {
 		
 		central.add(submit);
 		
-		//Εισαγωγη των components στο Frame]
-		this.setLocation(400, 25);
+		
+	
+		
+		//Εισαγωγη των components στο Frame
+		
+		this.setLocation(350, 25);
 		this.setTitle("Φόρμα Ανθρωπιστηκών Σπουδών");
 		this.setContentPane(sheet);			
 		this.setVisible(true);
 		this.setSize(700,700);
 		this.setResizable(false);
-		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		//this.pack();
+		//this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	
 		
 	}
 	

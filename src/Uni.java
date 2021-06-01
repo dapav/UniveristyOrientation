@@ -3,6 +3,7 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class Uni {
 
@@ -60,8 +61,11 @@ public class Uni {
 	
 	public void print() {
 		for(String u:university) {
-			System.out.println(u);
+			
+			
+			
 		}
+		
 	}
 
 	public int findFirst(ArrayList<Integer> a) {

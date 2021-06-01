@@ -1316,13 +1316,13 @@ public class FormaYgeias extends JFrame  {
 		central.add(submit);
 		
 		//Εισαγωγη των components στο Frame
-		this.setLocation(400, 25);
+		this.setLocation(50, 25);
 		this.setTitle("Φόρμα Ανθρωπιστηκών Σπουδών");
 		this.setContentPane(sheet);			
 		this.setVisible(true);
 		this.setSize(1250,700);
 		this.setResizable(false);
-		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		//this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		//this.pack();
 		
 	}
@@ -1787,7 +1787,7 @@ public class FormaYgeias extends JFrame  {
 			
 			if(e.getSource() == submit) {
 				try {
-					Uni u = new Uni(1);
+					Uni u = new Uni(3);
 					
 					TelikiOthoni othoni = new TelikiOthoni(u.selectFirst(UniversityScore),name);
 				}catch(IOException e1) {
