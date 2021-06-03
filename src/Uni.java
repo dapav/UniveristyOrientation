@@ -1,3 +1,7 @@
+/*Είσαγει της σχόλες σε ενα Array List Αναλογα με την επιλογή του χρηστη
+ Δεχαιτε ενα ArrayList ε βαθμολογία απο την εκάστωτε φόρμα
+ Βρισκεί την μεγαλυτερη βαθμολογια και επιστρέφει τον δείκτη του arrayList της σχολης*/
+
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;

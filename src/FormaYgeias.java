@@ -1,3 +1,6 @@
+/*Yλοποιηση του gui και συγκετρωση των βαθμολογίων σε ενα ArrayList το οποιο αποστέλεται στην Uni
+ Κληση της κλάσης TelikiOthoni */
+
 import java.awt.Color;
 import java.awt.FlowLayout;
 import java.awt.Font;
